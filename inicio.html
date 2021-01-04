@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="utf-8">
+	<link rel="icon" href="img/icon.png">
+	<title>Game Play</title>
+
+	<style type="text/css">
+		body{
+			width: 100%;
+			height: 100vh;
+			background-color: #110c23;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+		img{
+			width: 600px;
+			animation: neon 1.5s alternate infinite ease-in-out;
+		}
+		#btn{
+			color: #fff;
+			padding: 15px 20px;
+			border-radius: 5px;
+			border: 4px solid #fff;
+			z-index: 5;
+			overflow: hidden;
+			transition: .2s;
+		}
+
+		#btn a{
+			text-decoration: none;
+			font-size: 25px;
+			font-weight: bold;
+			font-family: sans-serif;
+			color: white;
+		}
+		#btn:hover{
+			background: tomato;
+			color: white;
+		}
+		
+		.texto{
+			--cor-neon: #ff3366;
+		}
+		.caixa{
+			--cor-neon: #ff3366 ;
+			animation: neon 1.5s alternate infinite ease-in-out;
+		}
+		@keyframes neon{
+			from{
+				filter: drop-shadow(0 0 2px var(--cor-neon));
+			}
+			to{
+			   filter: drop-shadow(0 0 10px var(--cor-neon));
+			}
+		}
+	</style>
+</head>
+<body>
+    <img src="img/fundo.png" class="texto">
+    <div id="btn" class="caixa"><a href="taglink/index.html">APERTE O PLAY</a></div>
+</body>
+</html>
